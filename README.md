@@ -5,7 +5,6 @@ Terraform-core plugin for Sublime Text 3
 
 * Syntax highlighting for `.tf`,`.tfvars` and `.hcl` files.
 * Format on save using `terraform fmt` (only available in version >= 0.6.15)
-* Code completion for resources and data sources
 * Terraform snippets supporing new syntax variables (terraform version >=0.12)
 
 Installation
@@ -37,14 +36,6 @@ $ https://github.com/marcincuber/terraform-core
 ## Configuration
 
 The defaults are available in the `Terraform.sublime-settings` file.
-
-## Development
-
-To update the completion files you will need Ruby 2.2+
-
-1. Install Ruby
-2. `bundle install`
-3. `bundle exec rake completions`
 
 ## Credit
 
