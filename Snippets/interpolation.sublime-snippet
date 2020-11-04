@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\$\{${2:var.${1:name}}\}
+]]></content>
+	<tabTrigger>$</tabTrigger>
+	<scope>string.quoted.double.terraform</scope>
+	<description>String interpolation</description>
+</snippet>

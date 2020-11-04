@@ -1,0 +1,30 @@
+[
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "Terraform",
+                        "id": "terraform",
+                        "children":
+                        [
+                            {
+                                "command": "edit_settings",
+                                "args": { "base_file": "${packages}/terraform-core/Terraform.sublime-settings" },
+                                "caption": "Settings"
+                            },
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,7 @@
+{
+  // Path of the terraform binary.
+  "terraform_path": "terraform",
+
+  // Format terraform source files on save using terraform fmt
+  "format_on_save": true,
+}

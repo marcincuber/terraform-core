@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+<dict>
+  <key>scope</key>
+  <string>source.terraform entity.name.resource</string>
+  <key>settings</key>
+  <dict>
+    <key>showInSymbolList</key>
+    <integer>1</integer>
+    <key>showInIndexedSymbolList</key>
+    <integer>1</integer>
+    <key>symbolTransformation</key>
+    <string>
+      s/\{//;
+      s/" "/./;
+      s/"//g;
+      s/(\w+)\s(.*)/\2 \(\1\)/
+    </string>
+    <key>symbolIndexTransformation</key>
+    <string>
+      s/\{//;
+      s/" "/./;
+      s/"//g;
+      s/(\w+)\s(.*)/\2 \(\1\)/
+    </string>
+  </dict>
+</dict>
+</plist>

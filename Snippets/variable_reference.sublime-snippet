@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+"\$\{var.${1:name}\}"
+]]></content>
+	<tabTrigger>var</tabTrigger>
+	<scope>source.terraform</scope>
+	<description>variable reference</description>
+</snippet>

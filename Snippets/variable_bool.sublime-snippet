@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+variable "${1:name}" {
+	type = bool
+	${2:description = "${3:describe your variable}"}
+	default = true
+}
+]]></content>
+	<tabTrigger>variableB</tabTrigger>
+	<scope>source.terraform</scope>
+	<description>variable (boolean)</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+module "${1:name}" {
+	source = "git::git@gitlab.com:/${2:group}/${3:sub_group}/${4:project}.git//${5:folder_name}${6:?ref=1.0.0}"
+	${7}
+}
+]]></content>
+	<tabTrigger>moduleGLPS</tabTrigger>
+	<scope>source.terraform</scope>
+	<description>module (gitlab ssh)</description>
+</snippet>

@@ -1,0 +1,11 @@
+[
+  {
+    "caption": "Terraform: Format",
+    "command": "terraform_fmt"
+  },
+  {
+      "command": "edit_settings",
+      "args": { "base_file": "${packages}/terraform-core/Terraform.sublime-settings" },
+      "caption": "Preferences: Terraform Settings"
+  },
+]

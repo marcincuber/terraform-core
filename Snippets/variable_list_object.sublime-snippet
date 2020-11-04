@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+variable "${1:name}" {
+	type = list(object({
+    ${2:key1} = number
+    ${3:key2} = string
+  }))
+	${4:description = "${5:describe your variable}"}
+	default = [
+		{
+			${2:key1} = num1
+			${3:key2} = "val2"
+		}
+	]
+}
+]]></content>
+	<tabTrigger>variableLO</tabTrigger>
+	<scope>source.terraform</scope>
+	<description>variable (objects list)</description>
+</snippet>
