@@ -18,7 +18,7 @@ Installation
 4. Enter `https://github.com/marcincuber/terraform-core`
 5. Open command palette again
 6. Select _"Package Control: Install Package"_
-7. Select _"sublime-terraform"_
+7. Select _"terraform-core"_
 
 ### Manually
 
