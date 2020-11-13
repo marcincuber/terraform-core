@@ -18,7 +18,7 @@ class TerraformFmt(sublime_plugin.TextCommand):
     settings      = sublime.load_settings('Terraform.sublime-settings')
     fmt_enabled   = settings.get('format_on_save', True)
 
-    return fmt_enabled and is_terraform_source(self.view) and not is_var_file(self.view)
+    return fmt_enabled and is_terraform_source(self.view)
 
 
   def run(self, edit):
@@ -88,12 +88,6 @@ class TerraformFmt(sublime_plugin.TextCommand):
     panel.run_command('append', {'characters': stderr.replace('<stdin>', path.basename(self.view.file_name()))})
     panel.set_read_only(True)
     window.run_command('show_panel', { 'panel': 'output.' + panel_name })
-
-
-def is_var_file(view):
-  _, ext = path.splitext(view.file_name())
-  return ext == '.tfvars'
-
 
 def is_terraform_source(view):
   tp = 0
